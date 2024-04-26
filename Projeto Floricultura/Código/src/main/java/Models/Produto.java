@@ -25,11 +25,23 @@ import lombok.Setter;
 	private Double preco;
 	private Integer quantidadeEstoque;
 	
-	public 
+	
+	public Produto() {
+		super();
+	}
+	
+	public Produto(Long idProduto, String nome, String tipo, Double preco, Integer quantidadeEstoque) {
+		super();
+		this.idProduto = idProduto;
+		this.nome = nome;
+		this.tipo = tipo;
+		this.preco = preco;
+		this.quantidadeEstoque = quantidadeEstoque;
+	}
 	public Long getIdProduto() {
 		return idProduto;
 	}
-	public Produto setIdProduto(Long idProduto) {
+	public void setIdProduto(Long idProduto){
 		this.idProduto = idProduto;
 	}
 	public String getNome() {

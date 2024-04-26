@@ -17,12 +17,12 @@ public class ProdutoService {
 	return produtoRepository.findAll();
 		
 	}
-	public Produto salvaProduto (Produto produto) {
+	public Produto salvarProduto(Produto produto) {
 	return produtoRepository.save(produto);	
 	}
 	
 	public Produto atualizarProduto(Long id, Produto produto) {
-		return produto.setIdProduto(id);
+		produto.setIdProduto(id);
 		return produtoRepository.save(produto);
 	}
 	public void excluirProduto(Long id) {
