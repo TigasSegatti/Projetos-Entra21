@@ -1,12 +1,11 @@
-package Services;
+package org.senai.entra21T2.service;
 
 import java.util.List;
 
+import org.senai.entra21T2.models.Produto;
+import org.senai.entra21T2.repositories.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import Models.Produto;
-import Repositories.ProdutoRepository;
 
 @Service
 public class ProdutoService {
